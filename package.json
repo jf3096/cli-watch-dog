@@ -1,0 +1,21 @@
+{
+  "name": "cli-watch-dog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "pkg": "pkg src/index.js --options expose-gc --output dist/cli-watch-dog-1.0.exe"
+  },
+  "dependencies": {
+    "@types/node": "15.6.1",
+    "pkg": "5.2.1"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "views/**/*",
+    "targets": [
+      "node12-win-x64"
+    ]
+  }
+}
