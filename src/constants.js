@@ -5,7 +5,7 @@ const constants = {
 	/**
 	 * 配置文件名
 	 */
-	CONFIG_FILE_NAME: '.js',
+	CONFIG_FILE_NAME: 'cli-watch-dog.js',
 };
 
 module.exports = constants;

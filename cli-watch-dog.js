@@ -3,7 +3,11 @@ module.exports = {
 	 * 检测路径
 	 * 同一级文件夹可以直接
 	 */
-	watchProgram: 'C:\\projects\\\\test\\http-server.bat',
+	watchProgram: './test/http-server.bat',
+	/**
+	 * 重启延迟, 单位: 秒
+	 */
+	restartDelay: 5,
 	/**
 	 * 指标
 	 */
@@ -16,4 +20,8 @@ module.exports = {
 			'Not found',
 		],
 	},
+	/**
+	 * 当进程挂掉后重启
+	 */
+	restartIfProcessDead: true,
 };
