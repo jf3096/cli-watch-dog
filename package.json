@@ -1,12 +1,12 @@
 {
   "name": "cli-watch-dog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
     "clean": "rimraf dist",
-    "pkg": "npm run clean && pkg src/index.js --options expose-gc --output dist/cli-watch-dog-1.0.1.exe"
+    "pkg": "npm run clean && pkg src/index.js --options expose-gc --output dist/cli-watch-dog-1.0.2.exe"
   },
   "dependencies": {
     "@types/node": "15.6.1",
@@ -14,7 +14,6 @@
   },
   "pkg": {
     "scripts": "build/**/*.js",
-    "assets": "views/**/*",
     "targets": [
       "node12-win-x64"
     ]
